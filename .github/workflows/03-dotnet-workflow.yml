@@ -26,6 +26,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
         
+    - run: |
+        ls
+        pwd
+        tree
+        
     - name: Restore dependencies
       run: dotnet restore
       
