@@ -19,8 +19,8 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}/dotnetapp
-  IMAGE_TAG: ${{ github.run_number }} # GITHUB_RUN_NUMBER }}
+  IMAGE_NAME: ${{ github.repository }} # /dotnetapp
+  IMAGE_TAG: 1.0.${{ github.run_number }} # GITHUB_RUN_NUMBER }}
 
 
 jobs:
