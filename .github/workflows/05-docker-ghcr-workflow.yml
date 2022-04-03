@@ -20,7 +20,7 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}/dotnetapp
-  IMAGE_TAG: ${{ github.GITHUB_RUN_NUMBER }}
+  IMAGE_TAG: ${{ github.run_number }} # GITHUB_RUN_NUMBER }}
 
 
 jobs:
