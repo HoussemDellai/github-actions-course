@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-scan-dotnet:
 
     runs-on: ubuntu-latest
     
@@ -25,9 +25,19 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-  
+
     - name: Restore dependencies
       run: dotnet restore
+  
+    # doc: https://github.com/dotnet/code-analysis
+    - name: Run .NET Code Analysis
+      uses: dotnet/code-analysis@v1
+      id: code-analysis
+      with:
+        projects: 03-app-dotnet\app-dotnet.csproj
+        # solution: MySolution.sln
+        build-breaking: true
+        all-categories: all
       
     - name: Build
       run: dotnet build --no-restore

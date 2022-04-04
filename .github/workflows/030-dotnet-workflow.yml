@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-dotnet-app:
 
     runs-on: ubuntu-latest
     
