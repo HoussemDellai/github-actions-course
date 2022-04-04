@@ -31,7 +31,7 @@ jobs:
   
     # doc: https://github.com/dotnet/code-analysis
     - name: Run .NET Code Analysis
-      uses: dotnet/code-analysis@v1
+      uses: dotnet/code-analysis@main
       id: code-analysis
       with:
         projects: 03-app-dotnet\app-dotnet.csproj
