@@ -1,4 +1,4 @@
-name: 031-dotnet-workflow
+name: 031-dotnet-scan
 
 on:
   push:
