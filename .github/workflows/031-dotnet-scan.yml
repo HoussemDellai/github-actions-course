@@ -29,6 +29,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
   
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x'
+
     # doc: https://github.com/dotnet/code-analysis
     - name: Run .NET Code Analysis
       uses: dotnet/code-analysis@main
