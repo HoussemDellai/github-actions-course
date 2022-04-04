@@ -1,4 +1,4 @@
-name: 03-dotnet-workflow
+name: 031-dotnet-workflow
 
 on:
   push:
