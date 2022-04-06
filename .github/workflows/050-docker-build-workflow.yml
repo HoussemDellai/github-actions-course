@@ -20,7 +20,5 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Build the Docker image
-      run: | 
-        ls
-        pwd
-        docker build ./03-app-dotnet --file Dockerfile --tag my-app-dotnet:$(date +%s)
+      working-directory: 03-app-dotnet
+      run: docker build . --file Dockerfile --tag my-app-dotnet:$(date +%s)
