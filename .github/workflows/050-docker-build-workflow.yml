@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: 050-docker-build-workflow
 
 on:
   push:
