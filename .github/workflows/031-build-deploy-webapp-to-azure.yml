@@ -22,7 +22,7 @@ name: 031-build-deploy-webapp-to-azure
 env:
   AZURE_WEBAPP_NAME: github-actions-workflow    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: '03-app-dotnet'    # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6'                           # set this to the .NET Core version to use
+  DOTNET_VERSION: '6.0.x'                           # set this to the .NET Core version to use
 
 on:
   push:
