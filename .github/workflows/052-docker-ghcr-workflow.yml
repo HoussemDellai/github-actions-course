@@ -1,4 +1,4 @@
-name: 050-docker-ghcr-workflow
+name: 052-docker-ghcr-workflow
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
