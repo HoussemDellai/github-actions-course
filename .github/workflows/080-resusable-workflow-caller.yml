@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: none # [ main ]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
 jobs:
   call-workflow:
     uses: HoussemDellai/github-actions-course/.github/workflows/080-reusable-workflow-called.yml@main
