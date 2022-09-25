@@ -1,4 +1,4 @@
-name: Reusable workflow example
+name: 080-resusable-workflow-called
 
 on:
   workflow_call:

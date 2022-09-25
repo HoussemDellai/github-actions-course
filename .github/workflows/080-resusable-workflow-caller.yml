@@ -1,4 +1,4 @@
-name: Call a reusable workflow
+name: 080-resusable-workflow-caller
 
 on:
   push:
