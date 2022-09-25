@@ -8,10 +8,10 @@ on:
 
 jobs:
   call-workflow:
-    uses: octo-org/example-repo/.github/workflows/workflow-A.yml@v1
+    uses: HoussemDellai/github-actions-course/.github/workflows/080-reusable-workflow-called.yml@main
 
   call-workflow-passing-data:
-    uses: octo-org/example-repo/.github/workflows/workflow-B.yml@main
+    uses: HoussemDellai/github-actions-course/.github/workflows/080-reusable-workflow-called.yml@main
     with:
       username: Houssem
     secrets:
