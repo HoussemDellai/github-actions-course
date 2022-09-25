@@ -12,7 +12,6 @@ on:
 
 jobs:
   example_job:
-    name: Pass input and secrets to my-action
     runs-on: ubuntu-latest
     steps:
       - name: Run a hello world script
