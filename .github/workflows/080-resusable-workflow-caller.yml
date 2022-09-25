@@ -12,10 +12,14 @@ on:
 jobs:
   call-workflow:
     uses: HoussemDellai/github-actions-course/.github/workflows/080-reusable-workflow-called.yml@main
+    with:
+      username: Houssem
+    secrets:
+      token: ${{ secrets.TOKEN }}
 
   call-workflow-passing-data:
     uses: HoussemDellai/github-actions-course/.github/workflows/080-reusable-workflow-called.yml@main
     with:
-      username: Houssem
+      username: Dellai
     secrets:
       token: ${{ secrets.TOKEN }}
