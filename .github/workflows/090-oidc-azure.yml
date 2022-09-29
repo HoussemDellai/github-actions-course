@@ -1,5 +1,5 @@
 # https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure
-name: Run Azure Login with OIDC
+name: 090-oidc-azure
 on:
   push:
     branches: none # [ main ]
