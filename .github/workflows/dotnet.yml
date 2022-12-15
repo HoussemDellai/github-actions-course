@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore .\03-app-dotnet
+      run: dotnet restore ./03-app-dotnet/app-dotnet.csproj
     - name: Build
       run: dotnet build --no-restore
     - name: Test
