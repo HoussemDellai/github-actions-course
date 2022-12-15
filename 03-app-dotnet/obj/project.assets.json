@@ -1,38 +1,44 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hodellai\\.nuget\\packages\\": {}
+    "C:\\Users\\NSunny\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\github-actions-course\\03-app-dotnet\\app-dotnet.csproj",
+      "projectUniqueName": "C:\\Nevin\\HACKfest\\2022-Migration-to-.NET-7\\actins with core\\github-actions-course\\03-app-dotnet\\app-dotnet.csproj",
       "projectName": "app-dotnet",
-      "projectPath": "D:\\Projects\\github-actions-course\\03-app-dotnet\\app-dotnet.csproj",
-      "packagesPath": "C:\\Users\\hodellai\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\github-actions-course\\03-app-dotnet\\obj\\",
+      "projectPath": "C:\\Nevin\\HACKfest\\2022-Migration-to-.NET-7\\actins with core\\github-actions-course\\03-app-dotnet\\app-dotnet.csproj",
+      "packagesPath": "C:\\Users\\NSunny\\.nuget\\packages\\",
+      "outputPath": "C:\\Nevin\\HACKfest\\2022-Migration-to-.NET-7\\actins with core\\github-actions-course\\03-app-dotnet\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\hodellai\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\NSunny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
-        "https://pkgs.dev.azure.com/houssemdellai/MyLibrary-Nuget/_packaging/MyLibrary-Nuget-02/nuget/v3/index.json": {},
-        "https://pkgs.dev.azure.com/houssemdellai/cardif-nuget/_packaging/cardif/nuget/v3/index.json": {},
-        "https://pkgs.dev.azure.com/houssemdellai/cardif-nuget/_packaging/cardif01/nuget/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -43,15 +49,16 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -63,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
