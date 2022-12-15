@@ -14,3 +14,6 @@ Samples for Github Actions DevOps pipelines and workflows
 [![050-docker-build-workflow](https://github.com/HoussemDellai/github-actions-course/actions/workflows/050-docker-build-workflow.yml/badge.svg)](https://github.com/HoussemDellai/github-actions-course/actions/workflows/050-docker-build-workflow.yml)
 
 [![052-docker-ghcr-workflow](https://github.com/HoussemDellai/github-actions-course/actions/workflows/052-docker-ghcr-workflow.yml/badge.svg)](https://github.com/HoussemDellai/github-actions-course/actions/workflows/052-docker-ghcr-workflow.yml)
+
+
+[![Build and deploy ASP.Net Core app to an Azure Web App](https://github.com/nevin-sunny04/github-actions-course/actions/workflows/azure-webapps-dotnet-core.yml/badge.svg)](https://github.com/nevin-sunny04/github-actions-course/actions/workflows/azure-webapps-dotnet-core.yml)
