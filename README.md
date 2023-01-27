@@ -15,3 +15,4 @@ Samples for Github Actions DevOps pipelines and workflows
 
 [![052-docker-ghcr-workflow](https://github.com/HoussemDellai/github-actions-course/actions/workflows/052-docker-ghcr-workflow.yml/badge.svg)](https://github.com/HoussemDellai/github-actions-course/actions/workflows/052-docker-ghcr-workflow.yml)
 l
+.
