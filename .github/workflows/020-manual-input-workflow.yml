@@ -20,7 +20,7 @@ on:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Person to greet'
         # Default value if no value is explicitly provided
-        default: ''
+        default: 'latest'
         # Input has to be provided for the workflow to run
         required: false
 
@@ -49,10 +49,10 @@ jobs:
     - name: Sets env vars for release
       run: |
         echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:release" >> $GITHUB_ENV
-      if: startsWith(github.event.inputs.name, 'test')
+      if: ${{ github.event.inputs.official-image == true}}
     - name: Sets env vars for staging
       run: |
         echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:staging" >> $GITHUB_ENV
-      if: startsWith(github.event.inputs.name, 'abc')
+      if: ${{ github.event.inputs.official-image != true}}
     - name: Send greeting
       run: echo "Hello ${{ env.DOCKER_IMAGE_NAME }}"
