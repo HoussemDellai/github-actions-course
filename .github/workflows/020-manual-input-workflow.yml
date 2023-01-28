@@ -48,11 +48,11 @@ jobs:
         fi
     - name: Sets env vars for release
       run: |
-        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:release"
+        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:release" >> $GITHUB_ENV
       if: startsWith(github.event.inputs.name, 'test')
     - name: Sets env vars for staging
       run: |
-        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:staging"
+        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:staging" >> $GITHUB_ENV
       if: startsWith(github.event.inputs.name, 'abc')
     - name: Send greeting
       run: echo "Hello ${{ DOCKER_IMAGE_NAME }}"
