@@ -28,7 +28,7 @@ env:
   REGISTRY: useast.jfrog.lexisnexisrisk.com
   ARTIFACT: hcare-docker-dev-virtual
   IMAGE_NAME: hc-cat-api-tokenlistservice
-  VERSION: ${{ github.event.inputs.name || 'latest' }}
+  VERSION: ${{ github.event.inputs.name == 'test', "hahahtest",'not testhahaha' }}
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
