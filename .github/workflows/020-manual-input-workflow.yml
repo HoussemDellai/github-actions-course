@@ -28,7 +28,7 @@ env:
   REGISTRY: useast.jfrog.lexisnexisrisk.com
   ARTIFACT: hcare-docker-dev-virtual
   IMAGE_NAME: hc-cat-api-tokenlistservice
-  VERSION: "${{ github.event.inputs.official-image }} === 'true' ? 'xbx' : 'latest'"
+  VERSION: ${{ github.event.inputs.name || 'latest' }}
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -41,9 +41,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello ${{ env.VERSION1 }}"
-      env:
-        VERSION1: "${{ github.event.inputs.official-image }} === 'true' ? 'xbx' : 'latest'"
+      run: echo "Hello ${{ env.VERSION }}"
     - name: Send greeting2
       run: |
         if [[ ${{ github.event.inputs.official-image }} == true ]]; then
