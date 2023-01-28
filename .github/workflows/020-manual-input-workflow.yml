@@ -37,4 +37,9 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Send greeting2
-      run: echo "Hello ${{ github.event.inputs.official-image }}"
+      run: |
+        if [[ ${{ github.event.inputs.official-image }} == true ]]; then
+          echo "version tag is true"
+        else
+          echo "There is no github tag reference, skipping"
+        fi
