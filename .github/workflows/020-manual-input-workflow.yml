@@ -28,7 +28,6 @@ env:
   REGISTRY: useast.jfrog.lexisnexisrisk.com
   ARTIFACT: hcare-docker-dev-virtual
   IMAGE_NAME: hc-cat-api-tokenlistservice
-  VERSION: ${{ github.event.inputs.name == 'test', "hahahtest",'not testhahaha' }}
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -40,8 +39,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ env.VERSION }}"
     - name: Send greeting2
       run: |
         if [[ ${{ github.event.inputs.official-image }} == true ]]; then
@@ -49,3 +46,13 @@ jobs:
         else
           echo "There is no github tag reference, skipping"
         fi
+    - name: Sets env vars for release
+      run: |
+        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:release"
+      if: ${{ github.event.inputs.name == 'test'}}
+    - name: Sets env vars for staging
+      run: |
+        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:staging"
+      if: ${{ github.event.inputs.name != 'test'}}
+    - name: Send greeting
+      run: echo "Hello ${{ env.DOCKER_IMAGE_NAME }}"
