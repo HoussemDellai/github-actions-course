@@ -20,9 +20,9 @@ on:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Person to greet'
         # Default value if no value is explicitly provided
-        default: 'World'
+        default: ''
         # Input has to be provided for the workflow to run
-        required: true
+        required: false
 
 env:
   REGISTRY: useast.jfrog.lexisnexisrisk.com
