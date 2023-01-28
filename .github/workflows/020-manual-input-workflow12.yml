@@ -1,0 +1,58 @@
+# This is a basic workflow that is manually triggered
+
+name: 020-manual-input-workflow12
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      official-image:
+        description: 'Official Image'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - true
+          - false
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Person to greet'
+        # Default value if no value is explicitly provided
+        default: 'latest'
+        # Input has to be provided for the workflow to run
+        required: false
+
+env:
+  REGISTRY: useast.jfrog.lexisnexisrisk.com
+  ARTIFACT: hcare-docker-dev-virtual
+  IMAGE_NAME: hc-cat-api-tokenlistservice
+    
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "greet"
+  greet:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Runs a single command using the runners shell
+    - name: Send greeting2
+      run: |
+        if [[ ${{ github.event.inputs.official-image }} == true ]]; then
+          echo "version tag is true"
+        else
+          echo "There is no github tag reference, skipping"
+        fi
+    - name: Sets env vars for release
+      run: |
+        echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:release" >> $GITHUB_ENV
+      if: ${{ github.event.inputs.official-image == 'true'}}
+    - name: Sets env vars for staging
+      run: |
+        echo "DOCKER_IMAGE_NAME=$(uuidgen)" >> $GITHUB_ENV
+      if: ${{ github.event.inputs.official-image == 'false'}}
+    - name: Send greeting
+      run: echo "Hello ${{ env.DOCKER_IMAGE_NAME }}"
