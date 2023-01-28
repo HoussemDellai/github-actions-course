@@ -52,7 +52,7 @@ jobs:
       if: ${{ github.event.inputs.official-image == 'true'}}
     - name: Sets env vars for staging
       run: |
-        echo "DOCKER_IMAGE_NAME=uuid::$(uuidgen)" >> $GITHUB_ENV
+        echo "DOCKER_IMAGE_NAME=$(uuidgen)" >> $GITHUB_ENV
       if: ${{ github.event.inputs.official-image == 'false'}}
     - name: Send greeting
       run: echo "Hello ${{ env.DOCKER_IMAGE_NAME }}"
