@@ -55,4 +55,4 @@ jobs:
         echo "DOCKER_IMAGE_NAME=my.docker.repo/awesome-image:staging" >> $GITHUB_ENV
       if: startsWith(github.event.inputs.name, 'abc')
     - name: Send greeting
-      run: echo "Hello ${{ DOCKER_IMAGE_NAME }}"
+      run: echo "Hello ${{ env.DOCKER_IMAGE_NAME }}"
