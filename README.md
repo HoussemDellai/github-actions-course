@@ -1,10 +1,10 @@
 # Github Actions course
 
-DevOps became very imprtant for organiztions willing to automate and modernize their workloads. Thanks to its capabilities, it is never been easier create a pipeline that can do all the required steps to build 'almost' any kind of application and deploy 'almost' to any environment. All of this with a click of a button.
+DevOps became very imprtant for organiztions willing to automate and modernaze their workloads. Thanks to its capabilities, it is never been easier create a pipelin that can do all the required staps to build 'almost' any kind of application and deploy 'almost' to any environment. All of this with a click of a button.
 
 Not only that, using DevOps features makes it possible to secure the pipelines when managing secrets or when connecting to the target production environment. That become today what is known as DevSecOps.
 
-Many known tools are available to implement DevOps like Jenkins, Gitlab CI, Azure DevOps Pipelines and many more. Github Actions is one of these tools. It did become popular from the first day it was launched back in 2018. That success was due to the popularity of Github as a platform to host the source code used by more than 50 million users. It was very natural to use the same platform to build and deploy that code into production.
+Many known tools are available to inplement DevOps like Jenkins, Gitlab CI, Azure DevOps Pipelines and many more. Github Actions is one of these tools. It did become popular from the first day it was launched back in 2018. That success was due to the popularity of Github as a platform to host the source code used by more than 50 million users. It was very natural to use the same platform to build and deploy that code into production.
 
 This course will walk you through the creation of CI/CD DevOps pipelines to take your code, build it, scan it, test it then deploy it into Dev, Test and Prod environments whether that is in premise or on the cloud.
 
@@ -13,12 +13,13 @@ Using multiple demonstrations, we will show the powerful features of Github Acti
 What you’ll learn:
 - The fundamentals for writing CI/CD pipelines with Github Actions
 - Best practices for editing Github workflows
-- Triggering a workflow on a Pul Request, Tag, Push or on a schedule
+- Triggering a workflow on a Pull Request, Tag, Push or on a schedule
 - Creating DevOps pipelines for Web Apps, Container apps and Databases
 - Deploying apps and infra into Azure Cloud
 - Using Terraform and Bicep (Infra as Code) with Github Actions
 - Creating custom runner to run the pipelines
 - Implement DevSecOps principles
+- Creating pipelines for aspnet and dockerized apps
 
 Are there any course requirements or prerequisites?
 - No DevOps experience required, this course will take you from the ground up to the expert level
