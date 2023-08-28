@@ -1,4 +1,4 @@
-name: Spell Check Markdown
+name: 041-spellcheck
 
 on:
   pull_request:
