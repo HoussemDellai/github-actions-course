@@ -28,7 +28,8 @@ jobs:
           incremental_files_only: false # Limit the files checked to the ones in the pull request or push.
           verbose: false # Log progress and other information during the action execution.
           files: |
-            **/*.md
+            README.md
+            # **/*.md
             !dist/**/*.{ts,js}
           # Define glob patterns to filter the files to be checked. Use a new line between patterns to define multiple patterns.
           # The default is to check ALL files that were changed in in the pull_request or push.

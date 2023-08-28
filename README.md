@@ -1,6 +1,6 @@
 # Github Actions course
 
-DevOps became very important for organizations willing to automate and modernize their workloads. Thanks to its capabilities, it is never been easier create a pipeline that can do all the required steps to build 'almost' any kind of application and deploy 'almost' to any environment. All of this with a click of a button.
+DevOps became very imprtant for organiztions willing to automate and modernize their workloads. Thanks to its capabilities, it is never been easier create a pipeline that can do all the required steps to build 'almost' any kind of application and deploy 'almost' to any environment. All of this with a click of a button.
 
 Not only that, using DevOps features makes it possible to secure the pipelines when managing secrets or when connecting to the target production environment. That become today what is known as DevSecOps.
 
