@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: 0100-trigger-azure-devops-pipeline
 
 on:
   workflow_dispatch:
