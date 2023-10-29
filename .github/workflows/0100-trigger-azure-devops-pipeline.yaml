@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: zure Pipelines Action
+    - name: Azure Pipelines Action
       uses: Azure/pipelines@v1
       with:
         azure-devops-project-url: 'https://dev.azure.com/houssemdellai/triggered-by-github-actions'
