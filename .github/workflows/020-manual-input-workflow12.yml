@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: 020-manual-input-workflow
+name: 020-manual-input-workflow12
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
